@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kushal | UI/UX Portfolio</title>
+  <style>
+    /* Reset + base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #f0f4f8, #e0ecff);
+      color: #333;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #6a11cb, #2575fc);
+      color: white;
+      padding: 4rem 1rem 3rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 300px;
+      height: 300px;
+      background: rgba(255,255,255,0.05);
+      border-radius: 50%;
+      top: -50px;
+      right: -100px;
+      z-index: 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      z-index: 1;
+      position: relative;
+    }
+
+    /* Sections */
+    section {
+      padding: 3rem 1rem;
+      max-width: 1100px;
+      margin: auto;
+      position: relative;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2b2b88;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    section:hover h2::after {
+      width: 80px;
+    }
+
+    h2::after {
+      content: "";
+      display: block;
+      width: 40px;
+      height: 3px;
+      background: #2575fc;
+      margin: 10px auto 0;
+      transition: 0.3s ease;
+    }
+
+    .about p {
+      text-align: center;
+      font-size: 1.1rem;
+      max-width: 800px;
+      margin: auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.3s ease;
+    }
+
+    .about p:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Skills */
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      list-style: none;
+      padding: 0;
+    }
+
+    .skills li {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1rem 1.5rem;
+      font-weight: bold;
+      color: #2575fc;
+      flex: 1 1 150px;
+      text-align: center;
+      transition: transform 0.2s, box-shadow 0.3s;
+      cursor: default;
+    }
+
+    .skills li:hover {
+      transform: translateY(-8px) scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    }
+
+    /* Projects */
+    .projects .project-card {
+      background: linear-gradient(120deg, #ffffff, #f5faff);
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+      margin-bottom: 2rem;
+      padding: 2rem;
+      transition: 0.3s;
+      border-left: 5px solid #2575fc;
+      cursor: default;
+    }
+
+    .project-card:hover {
+      transform: scale(1.015);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+
+    .project-card h3 {
+      margin-top: 0;
+      color: #2575fc;
+    }
+
+    .project-card p {
+      font-size: 1rem;
+      color: #444;
+    }
+
+    /* Contact */
+    .contact {
+      text-align: center;
+      padding: 2rem;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: 0.3s;
+    }
+
+    .contact:hover {
+      transform: translateY(-5px);
+    }
+
+    .contact a {
+      color: #6a11cb;
+      font-weight: bold;
+      display: inline-block;
+      margin: 0.3rem 0;
+    }
+
+    /* Footer */
+    footer {
+      background: #2b2b88;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    /* Responsive */
+    @media(max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .skills li {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Kushal N</h1>
+    <p>Frontend Developer | UI/UX Designer</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Software Developer with 1 year of experience at Maveric Systems Limited, specializing in Frontend Development and UI/UX Design.
+      I completed my Bachelor's in Computer Science from ACS College of Engineering, Bangalore. 
+      I love designing clean, user-friendly interfaces and building engaging user experiences through code and creativity.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML5 & CSS3</li>
+      <li>React.js</li>
+            <li>JavaScript</li>
+      <li>Material UI / Bootstrap</li>
+      <li>Spring Boot</li>
+      
+      <li>Figma / Adobe XD</li>
+      <li>SonarQube & ELK</li>
+    </ul>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Case Management System (Banking Domain)</h3>
+      <p>
+        A web application where agents raise customer query tickets and track all related activities.
+        <br><br>
+        👉 Played a key role as a Frontend Developer.<br>
+        👉 Developed UI using React Native and Material UI, creating reusable components per wireframes.<br>
+        👉 Worked on backend RESTful APIs using Spring Boot and handled smooth API integrations for seamless data flow.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <h3>Talent Share Portal (Spectrum)</h3>
+      <p>
+        A web platform allowing employees to book mentor time slots for project assistance.
+        <br><br>
+        👉 Worked as a Frontend Developer using React Native and Bootstrap.<br>
+        👉 Created parts of the backend using Spring Boot REST APIs.<br>
+        👉 Involved in SonarQube, ELK monitoring, log analysis, and code coverage tools.
+      </p>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:kushal@example.com">kushaln935@example.com</a></p>
+    <p>Mobile: <a href="#">8884447478</a></p>
+  </section>
+
+  <footer>
+    © 2025 Kushal N | UI/UX Portfolio
+  </footer>
+
+</body>
+</html>
