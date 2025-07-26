@@ -1,0 +1,62 @@
+import React from "react";
+
+const App = () => {
+  return (
+    <div className="font-sans text-gray-800">
+      {/* Header */}
+      <header className="bg-blue-600 text-white text-center py-10">
+        <h1 className="text-4xl font-bold">Kushal N</h1>
+        <p className="text-xl mt-2">UI/UX Designer & Front-End Developer</p>
+        <nav className="mt-4">
+          <a href="#about" className="mx-3 hover:underline">About</a>
+          <a href="#projects" className="mx-3 hover:underline">Projects</a>
+          <a href="#contact" className="mx-3 hover:underline">Contact</a>
+        </nav>
+      </header>
+
+      
+      <section id="about" className="py-10 px-4 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">About Me</h2>
+        <p className="text-lg">
+          I am a passionate Software Developer with 1 year of experience at Maveric Systems Limited, where I focused primarily on Frontend Development and UI/UX Design. I hold a Bachelor's degree in Computer Science and Engineering from ACS College of Engineering, Bangalore. I enjoy creating eye-catching, intuitive, and user-friendly interfaces that enhance the overall user experience. My strength lies in blending design aesthetics with functional development to build engaging digital experiences.
+        </p>
+      </section>
+
+      <section id="projects" className="bg-gray-100 py-10 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-semibold mb-6">My Projects</h2>
+
+          <div className="mb-6 bg-white p-6 rounded-lg shadow">
+            <h3 className="text-xl font-bold">Case Management System (Project 1)</h3>
+            <p className="mt-2">
+              A banking domain web application where an agent raises a query ticket on behalf of the customer and tracks all query-related activities.<br/>
+              → Mainly played a key role as a frontend developer. Developed the UI using the React Native library and Material UI, utilizing reusable components as per provided wireframes. Also contributed to backend development using RESTful APIs with Spring Boot. Conducted API integrations to ensure seamless data flow and system functionality.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 rounded-lg shadow">
+            <h3 className="text-xl font-bold">Talent Share Portal (Spectrum) (Project 2)</h3>
+            <p className="mt-2">
+              A web application where employees can seek help from their project mentor by reserving mutually available time slots.<br/>
+              → Worked as a Frontend Developer. Developed the UI using React Native and Bootstrap. Created some RESTful APIs using Spring Boot. Also worked on SonarQube, ELK stack, log monitoring, and code coverage.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      
+      <section id="contact" className="py-10 px-4 max-w-4xl mx-auto">
+        <h2 className="text-2xl font-semibold mb-4">Contact Me</h2>
+        <p className="mb-2">Email: <a href="mailto:kushal@example.com" className="text-blue-600 hover:underline">kushaln935@example.com</a></p>
+      
+      </section>
+
+     
+      <footer className="text-center py-6 bg-gray-200">
+        <p>© 2025 Kushal N. All rights reserved.</p>
+      </footer>
+    </div>
+  );
+};
+
+export default App;
